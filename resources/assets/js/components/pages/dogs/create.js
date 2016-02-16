@@ -1,9 +1,23 @@
 module.exports = {
   data: function () {
     return {
-      dog: {
-        name: '',
-        age: ''
+      row: {
+        dokiedy: '',
+        zaco: '',
+        kwota: 0,
+        completed: false,
+        styczen: 0,
+        luty: 0,
+        marzec: 0,
+        kwiecien: 0,
+        maj: 0,
+        czerwiec: 0,
+        lipiec: 0,
+        sierpien: 0,
+        wrzesien: 0,
+        pazdziernik: 0,
+        listopad: 0,
+        grudzien: 0
       },
       messages: []
     }
@@ -13,11 +27,11 @@ module.exports = {
     createDog: function (e) {
       e.preventDefault()
       var that = this
-      client({path: 'dogs', entity: this.dog}).then(
+      client({path: 'wydatki', entity: this.row}).then(
         function (response, status) {
-          that.dog.name = ''
-          that.dog.age = ''
-          that.messages = [ {type: 'success', message: 'Woof woof! Your dog was created'} ]
+          that.row.kwota = ''
+          that.row.zaco = ''
+          that.messages = [ {type: 'success', message: 'Debt was created'} ]
           Vue.nextTick(function () {
             document.getElementById('nameInput').focus()
           })

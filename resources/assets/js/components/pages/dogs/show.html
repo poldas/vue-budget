@@ -1,5 +1,5 @@
 <div class="panel-heading">
-	Edit dog
+	Edit
 </div>
 <div class="panel-body">
 	<div id="alerts" v-if="messages.length > 0">
@@ -10,27 +10,99 @@
 	<form class="form-horizontal" role="form" v-on:submit="updateDog">
 	<fieldset disabled>
 		<div class="form-group">
-			<label for="name" class="col-sm-2 col-sm-offset-1 control-label">Dog ID</label>
+			<label for="name" class="col-sm-2 col-sm-offset-1 control-label">ID</label>
 			<div class="col-sm-5">
-				<input class="form-control" required="required" name="name" type="text" v-model="dog.id">
+				<input class="form-control" required="required" name="name" type="text" v-model="row.id">
 			</div>
 		</div>
 	</fieldset>
 		<div class="form-group">
-			<label for="name" class="col-sm-2 col-sm-offset-1 control-label">Name your dog</label>
+			<label for="name" class="col-sm-2 col-sm-offset-1 control-label">kwota</label>
 			<div class="col-sm-5">
-				<input class="form-control" required="required" name="name" type="text" v-model="dog.name">
+				<input class="form-control" required="required" name="kwota" type="text" v-model="row.kwota" id="nameInput">
 			</div>
 		</div>
 		<div class="form-group">
-			<label for="age" class="col-sm-2 col-sm-offset-1 control-label">What's the age?</label>
+			<label for="age" class="col-sm-2 col-sm-offset-1 control-label">za co</label>
 			<div class="col-sm-5">
-				<input class="form-control" required="required" name="age" type="text" v-model="dog.age">
+				<input class="form-control" required="required" name="zaco" type="text" v-model="row.zaco">
+			</div>
+		</div>
+		<div class="form-group">
+			<label for="age" class="col-sm-1 col-sm-offset-1 control-label">styczeń</label>
+			<div class="col-sm-5">
+				<input class="form-control" required="required" name="styczen" type="text" v-model="row.styczen">
+			</div>
+		</div>
+		<div class="form-group">
+			<label for="age" class="col-sm-1 col-sm-offset-1 control-label">luty</label>
+			<div class="col-sm-5">
+				<input class="form-control" required="required" name="luty" type="text" v-model="row.luty">
+			</div>
+		</div>
+		<div class="form-group">
+			<label for="age" class="col-sm-1 col-sm-offset-1 control-label">marzec</label>
+			<div class="col-sm-5">
+				<input class="form-control" required="required" name="marzec" type="text" v-model="row.marzec">
+			</div>
+		</div>
+		<div class="form-group">
+			<label for="age" class="col-sm-1 col-sm-offset-1 control-label">kwiecien</label>
+			<div class="col-sm-5">
+				<input class="form-control" required="required" name="kwiecien" type="text" v-model="row.kwiecien">
+			</div>
+		</div>
+		<div class="form-group">
+			<label for="age" class="col-sm-1 col-sm-offset-1 control-label">maj</label>
+			<div class="col-sm-5">
+				<input class="form-control" required="required" name="maj" type="text" v-model="row.maj">
+			</div>
+		</div>
+		<div class="form-group">
+			<label for="age" class="col-sm-1 col-sm-offset-1 control-label">czerwiec</label>
+			<div class="col-sm-5">
+				<input class="form-control" required="required" name="czerwiec" type="text" v-model="row.czerwiec">
+			</div>
+		</div>
+		<div class="form-group">
+			<label for="age" class="col-sm-2 col-sm-offset-1 control-label">lipiec</label>
+			<div class="col-sm-5">
+				<input class="form-control" required="required" name="lipiec" type="text" v-model="row.lipiec">
+			</div>
+		</div>
+		<div class="form-group">
+			<label for="age" class="col-sm-2 col-sm-offset-1 control-label">sierpien</label>
+			<div class="col-sm-5">
+				<input class="form-control" required="required" name="sierpien" type="text" v-model="row.sierpien">
+			</div>
+		</div>
+		<div class="form-group">
+			<label for="age" class="col-sm-2 col-sm-offset-1 control-label">wrzesien</label>
+			<div class="col-sm-5">
+				<input class="form-control" required="required" name="wrzesien" type="text" v-model="row.wrzesien">
+			</div>
+		</div>
+		<div class="form-group">
+			<label for="age" class="col-sm-2 col-sm-offset-1 control-label">pazdziernik</label>
+			<div class="col-sm-5">
+				<input class="form-control" required="required" name="pazdziernik" type="text" v-model="row.pazdziernik">
+			</div>
+		</div>
+		<div class="form-group">
+			<label for="age" class="col-sm-2 col-sm-offset-1 control-label">listopad</label>
+			<div class="col-sm-5">
+				<input class="form-control" required="required" name="listopad" type="text" v-model="row.listopad">
+			</div>
+		</div>
+		<div class="form-group">
+			<label for="age" class="col-sm-2 col-sm-offset-1 control-label">grudzien</label>
+			<div class="col-sm-5">
+				<input class="form-control" required="required" name="grudzien" type="text" v-model="row.grudzien">
 			</div>
 		</div>
 		<div class="form-group">
 			<div class="col-sm-4 col-sm-offset-3">
-				<button type="submit" class="btn btn-primary"><i class="fa fa-btn fa-save"></i>Update the dog!</button>
+				<button type="submit" class="btn btn-primary"><i class="fa fa-btn fa-save"></i>Update</button>
 			</div>
 		</div>
 	</form>

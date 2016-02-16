@@ -18,16 +18,40 @@
 	<thead>
 		<tr>
 			<th>ID</th>
-			<th>Name</th>
-			<th>Age</th>
-			<th width="120px">Actions</th>
+			<th>Za co</th>
+			<th>Kwota</th>
+			<th>Styczeń</th>
+			<th>Luty</th>
+			<th>Marzec</th>
+            <th>kwiecien</th>
+            <th>maj</th>
+            <th>czerwiec</th>
+            <th>lipiec</th>
+            <th>sierpien</th>
+            <th>wrzesien</th>
+            <th>pazdziernik</th>
+            <th>listopad</th>
+            <th>grudzien</th>
+            <th width="120px">Action</th>
 		</tr>
 	</thead>
 	<tbody>
 		<tr v-for="dog in dogs">
 			<td>{{ dog.id }}</td>
-			<td>{{ dog.name }}</td>
-			<td>{{ dog.age }}</td>
+			<td>{{ dog.zaco }}</td>
+			<td>{{ dog.kwota }}</td>
+            <td>{{ dog.styczen }}</td>
+            <td>{{ dog.luty }}</td>
+            <td>{{ dog.marzec }}</td>
+            <td>{{ dog.kwiecien }}</td>
+            <td>{{ dog.maj }}</td>
+            <td>{{ dog.czerwiec}}</td>
+            <td>{{ dog.lipiec }}</td>
+            <td>{{ dog.sierpien }}</td>
+            <td>{{ dog.wrzesien }}</td>
+            <td>{{ dog.pazdziernik}}</td>
+            <td>{{ dog.listopad }}</td>
+            <td>{{ dog.grudzien }}</td>
 			<td>
 				<a class="btn btn-primary btn-xs" v-link="{ path: '/dogs/'+dog.id }">Edit</a>
 				<a class="btn btn-primary btn-xs" v-on:click="deleteDog($index)">Delete</a>

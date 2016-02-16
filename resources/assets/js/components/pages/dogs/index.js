@@ -11,7 +11,7 @@ module.exports = {
     // Let's fetch some dogs
     fetch: function (successHandler) {
       var that = this
-      client({ path: '/dogs' }).then(
+      client({ path: '/wydatki' }).then(
         function (response) {
           // Look ma! Puppies!
           that.$set('dogs', response.entity.data)
@@ -27,7 +27,7 @@ module.exports = {
 
     deleteDog: function (index) {
       var that = this
-      client({ path: '/dogs/' + this.dogs[index].id, method: 'DELETE' }).then(
+      client({ path: '/wydatki/' + this.dogs[index].id, method: 'DELETE' }).then(
         function (response) {
           that.dogs.splice(index, 1)
           that.messages = [{type: 'success', message: 'Great, dog purged.'}]

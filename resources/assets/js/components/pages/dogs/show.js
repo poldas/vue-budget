@@ -2,10 +2,23 @@ module.exports = {
 
   data: function () {
     return {
-      dog: {
-        id: null,
-        name: null,
-        age: null
+      row: {
+        dokiedy: '',
+        zaco: '',
+        kwota: 0,
+        completed: false,
+        styczen: 0,
+        luty: 0,
+        marzec: 0,
+        kwiecien: 0,
+        maj: 0,
+        czerwiec: 0,
+        lipiec: 0,
+        sierpien: 0,
+        wrzesien: 0,
+        pazdziernik: 0,
+        listopad: 0,
+        grudzien: 0
       },
       messages: []
     }
@@ -15,9 +28,9 @@ module.exports = {
     // Let's fetch the dog
     fetch: function (id, successHandler) {
       var that = this
-      client({ path: '/dogs/' + id }).then(
+      client({ path: '/wydatki/' + id }).then(
         function (response) {
-          that.$set('dog', response.entity.data)
+          that.$set('row', response.entity.data)
           successHandler(response.entity.data)
         },
         function (response, status, request) {
@@ -34,7 +47,7 @@ module.exports = {
     updateDog: function (e) {
       e.preventDefault()
       var self = this
-      client({ path: '/dogs/' + this.dog.id, entity: this.dog, method: 'PUT'}).then(
+      client({ path: '/wydatki/' + this.row.id, entity: this.row, method: 'PUT'}).then(
         function (response) {
           self.messages = []
           self.messages.push({type: 'success', message: 'Woof woof! Your dog was updated'})
