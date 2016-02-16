@@ -1,7 +1,7 @@
 var config = {
   env: 'development',
   api: {
-    base_url: 'http://localhost:8000/api',
+    base_url: 'http://vue-starter-api.app/api',
     defaultRequest: {
       headers: {
         'X-Requested-With': 'rest.js',

@@ -53,6 +53,14 @@ module.exports = {
           }
         }
       },
+      '/budget' : {
+        component: require('./compiled/pages/budget.vue'),
+        subRoutes: {
+          '/': {
+            component: require('./compiled/pages/budget/year.vue')
+          }
+        }
+      },
       '/terms': {
         component: require('./compiled/pages/terms.vue')
       },

@@ -33,6 +33,10 @@ window.client = rest.wrap(pathPrefix, { prefix: config.api.base_url })
                     .wrap(jwtAuth);
 
 // Bootstrap the app
+var VueTables = require('vue-tables');
+Vue.use(VueTables.client);
+Vue.use(VueTables.server);
+
 Vue.component('nav-component', require('./compiled/nav.vue'))
 Vue.component('footer-component', require('./compiled/footer.vue'))
 const App = Vue.extend(require('./compiled/app.vue'))
