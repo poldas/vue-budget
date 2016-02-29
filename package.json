@@ -8,6 +8,9 @@
     "type": "git",
     "url": "git://github.com/layer7be/vue-starter.git"
   },
+  "scripts": {
+    "dev": "gulp --watch"
+  },
   "devDependencies": {
     "babel-runtime": "^5.8.25",
     "bootstrap-sass": "^3.0.0",

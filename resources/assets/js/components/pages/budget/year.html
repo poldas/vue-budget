@@ -1,7 +1,13 @@
+<div>
 <div class="panel-heading">
 	Budżet roczny
 </div>
 <div class="panel-body">
 	{{budgetMessage}}
 	<v-client-table :data="budgetData" :options="budgetTableOptions"></v-client-table>
+    <div>
+        <h4>tabela</h4>
+        <table :table-data="budgetData" id="wydatki-table"></table>
+    </div>
+</div>
 </div>
