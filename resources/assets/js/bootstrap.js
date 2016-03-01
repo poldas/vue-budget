@@ -39,6 +39,7 @@ Vue.use(VueTables.server);
 
 Vue.component('nav-component', require('./compiled/nav.vue'))
 Vue.component('footer-component', require('./compiled/footer.vue'))
+Vue.component('budget-table', require('./compiled/budget/index.vue'))
 const App = Vue.extend(require('./compiled/app.vue'))
 router.start(App, '#app')
 window.router = router
